@@ -6,3 +6,4 @@ class image:
     def OpenImage(imagepath, windowName):
         img = cv2.imread(imagepath)
         cv2.imshow(windowName, img)
+        
