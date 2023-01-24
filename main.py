@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import cv2
+import src.GettingImage as gi
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+path = r'assets\images\face-1.jpg'
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# img = cv2.imread(path)
+#
+# cv2.imshow('Image', img)
+gi.image.OpenImage(path, 'Window')
+cv2.waitKey(0)
+cv2.destroyAllWindows()
